@@ -1,7 +1,7 @@
-from transformers import MBartForConditionalGeneration, MBart50TokenizerFast
+from transformers import MBartForConditionalGeneration, MBart50Tokenizer
 
 model_name = "facebook/mbart-large-50-many-to-many-mmt"
-tok = MBart50TokenizerFast.from_pretrained(model_name)
+tok = MBart50Tokenizer.from_pretrained(model_name)
 model = MBartForConditionalGeneration.from_pretrained(model_name)
 
 def translate(text, src_lang_code, tgt_lang_code="en_XX"):

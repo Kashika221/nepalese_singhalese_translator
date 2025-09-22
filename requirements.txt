@@ -1,0 +1,10 @@
+pdfplumber
+pytesseract
+pillow
+transformers
+tiktoken
+torch
+torchvision
+torchaudio
+sentencepiece
+hf_xet
